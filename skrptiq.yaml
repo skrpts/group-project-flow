@@ -1,0 +1,37 @@
+name: "group-project-flow"
+display_name: "Group Project Flow"
+description: "Coordinating group assignments — role allocation, task decomposition, progress tracking, and final assembly"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+licence: "MIT"
+repository: "https://github.com/skrpts/group-project-flow"
+
+category: "student"
+tags:
+  - "group-work"
+  - "collaboration"
+  - "project-management"
+  - "teamwork"
+  - "assignments"
+
+requires:
+  services:
+    - "anthropic-claude"
+  permissions: []
+  data_handling:
+    - "assignment-briefs"
+    - "student-writing"
+
+contents:
+  skills: 3
+  prompts: 5
+  workflows: 1
+  services: 1
+  sources: 1
+  documents: 1
+  assets: 2
+  total: 14
