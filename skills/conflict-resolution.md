@@ -5,7 +5,7 @@ title: Conflict Resolution
 description: "Provides structured mediation strategies for common group work conflicts including unequal contribution, disagreements, and communication breakdowns"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: group-work-pedagogy-reference
     type: references

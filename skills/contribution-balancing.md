@@ -5,7 +5,7 @@ title: Contribution Balancing
 description: "Ensures fair and equitable distribution of work across group members, accounting for skills, availability, and task difficulty"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: group-work-pedagogy-reference
     type: references

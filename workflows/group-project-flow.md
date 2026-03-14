@@ -21,7 +21,7 @@ connections:
     type: uses
   - target: final-assembly-checker
     type: uses
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: group-work-pedagogy-reference
     type: references
@@ -104,3 +104,44 @@ Stages 1 and 2 are sequential. Once Stage 3 is complete, individual work happens
 - After Stage 3: Task tracker is reviewed and confirmed by all members
 - After Stage 4: Feedback is discussed and any issues are resolved before continuing
 - After Stage 5: All members review the assembled document before submission
+
+## Inputs
+
+| Name | Required | Description | Example |
+|------|----------|-------------|---------|
+| `{{input.assignment_brief}}` | Yes | The assignment brief | `Paste a short brief describing the goal, audience, and constraints.` |
+| `{{input.group_details}}` | Yes | group details | `Paste the relevant brief, notes, source material, or dataset here.` |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| A structured breakdown of deliverables, milestones, and success criteria | A structured breakdown of deliverables, milestones, and success criteria |
+| Role assignments and a completed team charter | Role assignments and a completed team charter |
+| A structured task tracker using project-tracker-template | A structured task tracker using project-tracker-template |
+| Constructive peer feedback for each team member | Constructive peer feedback for each team member |
+| A unified, consistent final submission | A unified, consistent final submission with a quality report |
+
+## Setup
+
+Before running this workflow:
+
+1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
+2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
+
+## Provider Notes
+
+- Most stages work with any capable model; stronger models usually improve synthesis, judgement, and writing quality.
+- Extraction, classification, and formatting steps generally run well on smaller or faster models.
+- Because there are no vendor-specific integrations here, provider choice is mostly a trade-off between speed, quality, and cost.
+
+## Example Input
+
+To test this workflow immediately after import:
+
+```
+Assignment Brief: "Paste a short brief describing the goal, audience, and constraints."
+Group Details: "Paste the relevant brief, notes, source material, or dataset here."
+```
+

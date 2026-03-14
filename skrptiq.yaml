@@ -19,8 +19,7 @@ tags:
   - "assignments"
 
 requires:
-  services:
-    - "anthropic-claude"
+  services: []
   permissions: []
   data_handling:
     - "assignment-briefs"

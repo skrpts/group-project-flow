@@ -5,7 +5,7 @@ title: Task Decomposition
 description: "Breaks complex group assignments into manageable, assignable tasks with clear dependencies, effort estimates, and acceptance criteria"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: group-work-pedagogy-reference
     type: references
