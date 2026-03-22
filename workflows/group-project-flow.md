@@ -109,8 +109,21 @@ Stages 1 and 2 are sequential. Once Stage 3 is complete, individual work happens
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.assignment_brief}}` | Yes | The assignment brief | `Paste a short brief describing the goal, audience, and constraints.` |
-| `{{input.group_details}}` | Yes | group details | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.assignment_brief}}` | Yes | The assignment brief | `Write a 3000-word group report on renewable energy policy in the UK.` |
+| `{{input.module_name}}` | Yes | The module or course name | `Environmental Policy` |
+| `{{input.group_size}}` | Yes | Number of group members | `4` |
+| `{{input.deadline}}` | Yes | Submission deadline | `2026-04-30` |
+| `{{input.total_scope}}` | Yes | Total word count or scope | `3000 words plus references` |
+| `{{input.assessment_criteria}}` | No | Assessment criteria or marking rubric | `Research depth 30%, Analysis 30%, Writing quality 20%, Presentation 20%` |
+| `{{input.additional_requirements}}` | No | Any additional requirements | `Harvard referencing, contribution statement required` |
+| `{{input.team_members}}` | Yes | Team member profiles (names, strengths, availability) | `Alice (research, 10hrs/wk), Bob (writing, 8hrs/wk), Carol (data, 12hrs/wk), Dan (editing, 6hrs/wk)` |
+| `{{input.tools}}` | No | Collaborative tools the group uses | `Google Docs, WhatsApp` |
+| `{{input.current_milestone}}` | No | Current project milestone for feedback stage | `midpoint check-in` |
+| `{{input.member_contributions}}` | No | Team member contributions for feedback stage | `Alice: literature review complete. Bob: introduction drafted.` |
+| `{{input.concerns}}` | No | Specific concerns raised by group members | `Bob missed last two meetings.` |
+| `{{input.assembled_document}}` | No | Complete assembled document for final check | `Paste the assembled group document here.` |
+| `{{input.referencing_style}}` | No | Required referencing style | `Harvard` |
+| `{{input.section_authors}}` | No | Which team member wrote each section | `Introduction: Bob, Literature Review: Alice, Analysis: Carol, Conclusion: Dan` |
 
 ## Outputs
 
@@ -141,7 +154,11 @@ Before running this workflow:
 To test this workflow immediately after import:
 
 ```
-Assignment Brief: "Paste a short brief describing the goal, audience, and constraints."
-Group Details: "Paste the relevant brief, notes, source material, or dataset here."
+Assignment Brief: "Write a 3000-word group report on renewable energy policy in the UK."
+Module Name: "Environmental Policy"
+Group Size: "4"
+Deadline: "2026-04-30"
+Total Scope: "3000 words plus references"
+Team Members: "Alice (research, 10hrs/wk), Bob (writing, 8hrs/wk), Carol (data, 12hrs/wk), Dan (editing, 6hrs/wk)"
 ```
 

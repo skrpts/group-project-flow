@@ -1,7 +1,7 @@
 name: "group-project-flow"
 display_name: "Group Project Flow"
 description: "Coordinating group assignments — role allocation, task decomposition, progress tracking, and final assembly"
-version: "1.0.0"
+version: "1.2.0"
 engine: ">=1.0.0"
 
 author:
