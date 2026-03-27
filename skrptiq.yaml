@@ -19,7 +19,8 @@ tags:
   - "assignments"
 
 requires:
-  services: []
+  services:
+    - "llm-service"
   permissions: []
   data_handling:
     - "assignment-briefs"
