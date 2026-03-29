@@ -3,7 +3,7 @@ type: prompt
 id: task-tracker-builder
 title: Task Tracker Builder
 description: "Creates a structured task tracker with dependencies, deadlines, and accountability for group project management"
-tags: [Production]
+tags: [Production, communication:team, planning:team]
 connections:
   - target: task-decomposition
     type: derived_from

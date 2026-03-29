@@ -3,7 +3,7 @@ type: skill
 id: task-decomposition
 title: Task Decomposition
 description: "Breaks complex group assignments into manageable, assignable tasks with clear dependencies, effort estimates, and acceptance criteria"
-tags: [Production, Tested]
+tags: [Production, Tested, writing:product, communication:team, quality:testing]
 connections:
   - target: llm-service
     type: runs_on

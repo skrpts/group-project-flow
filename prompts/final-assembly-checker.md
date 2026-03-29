@@ -3,7 +3,7 @@ type: prompt
 id: final-assembly-checker
 title: Final Assembly Checker
 description: "Checks that all group contributions are consistent in style, quality, and formatting before final submission"
-tags: [Production]
+tags: [Production, communication:team, quality:testing]
 connections:
   - target: contribution-balancing
     type: derived_from

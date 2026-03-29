@@ -3,7 +3,7 @@ type: asset
 id: project-tracker-template
 title: Project Tracker Template
 description: "Structured task tracker template for group project management with dependencies, deadlines, and progress monitoring"
-tags: [Production, Customer-Facing]
+tags: [Production, Customer-Facing, communication:team, planning:team]
 connections:
   - target: group-work-pedagogy-reference
     type: references

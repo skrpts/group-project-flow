@@ -3,7 +3,7 @@ type: prompt
 id: project-scoper
 title: Project Scoper
 description: "Breaks a group assignment brief into clear deliverables, milestones, and success criteria"
-tags: [Production]
+tags: [Production, communication:team, planning:team]
 connections:
   - target: task-decomposition
     type: derived_from

@@ -3,7 +3,7 @@ type: workflow
 id: group-project-flow
 title: Group Project Flow
 description: "End-to-end workflow for coordinating group assignments from initial brief through role allocation, task tracking, and final assembly"
-tags: [Production, Tested]
+tags: [Production, Tested, communication:team, planning:team]
 connections:
   - target: task-decomposition
     type: uses

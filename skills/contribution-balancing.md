@@ -3,7 +3,7 @@ type: skill
 id: contribution-balancing
 title: Contribution Balancing
 description: "Ensures fair and equitable distribution of work across group members, accounting for skills, availability, and task difficulty"
-tags: [Production, Tested]
+tags: [Production, Tested, communication:team, planning:team]
 connections:
   - target: llm-service
     type: runs_on
