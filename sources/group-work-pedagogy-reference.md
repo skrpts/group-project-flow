@@ -3,7 +3,7 @@ type: source
 id: group-work-pedagogy-reference
 title: Group Work Pedagogy Reference
 description: "Reference on effective group work and collaborative learning, drawing on educational research and practical frameworks"
-tags: [Production, Customer-Facing, communication:team, planning:team]
+tags: [Production, Customer-Facing, Planning, Communication]
 connections:
   - target: group-project-survival-guide
     type: references

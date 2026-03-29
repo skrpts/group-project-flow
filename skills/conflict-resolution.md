@@ -3,7 +3,7 @@ type: skill
 id: conflict-resolution
 title: Conflict Resolution
 description: "Provides structured mediation strategies for common group work conflicts including unequal contribution, disagreements, and communication breakdowns"
-tags: [Production, Tested, communication:team, planning:team]
+tags: [Production, Tested, Planning, Communication]
 connections:
   - target: llm-service
     type: runs_on

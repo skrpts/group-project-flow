@@ -3,7 +3,7 @@ type: prompt
 id: peer-feedback-generator
 title: Peer Feedback Generator
 description: "Generates constructive, specific peer feedback for group members based on their contributions and the project's progress"
-tags: [Production, communication:team, quality:review]
+tags: [Production, Review, Planning]
 connections:
   - target: contribution-balancing
     type: derived_from

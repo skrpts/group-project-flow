@@ -3,7 +3,7 @@ type: asset
 id: team-charter-template
 title: Team Charter Template
 description: "Template for establishing shared expectations, communication norms, and conflict resolution procedures within a student group"
-tags: [Production, Customer-Facing, data:visualisation, communication:team]
+tags: [Production, Customer-Facing, Planning, Communication]
 connections:
   - target: group-work-pedagogy-reference
     type: references

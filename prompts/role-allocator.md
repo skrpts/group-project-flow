@@ -3,7 +3,7 @@ type: prompt
 id: role-allocator
 title: Role Allocator
 description: "Allocates roles and responsibilities based on team member strengths, preferences, and availability"
-tags: [Production, communication:team, planning:team]
+tags: [Production, Planning, Communication]
 connections:
   - target: contribution-balancing
     type: derived_from

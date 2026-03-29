@@ -3,7 +3,7 @@ type: document
 id: group-project-survival-guide
 title: Group Project Survival Guide
 description: "Practical guide to making group projects work, covering communication, planning, conflict management, and final assembly"
-tags: [Production, Customer-Facing, communication:team, planning:team]
+tags: [Production, Customer-Facing, Quality, Planning]
 connections:
   - target: group-work-pedagogy-reference
     type: references
