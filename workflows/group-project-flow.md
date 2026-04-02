@@ -31,19 +31,19 @@ connections:
     type: uses
   - target: team-charter-template
     type: uses
+  - target: data-interpretation
+  - target: progress-tracking
+  - target: plan-studies
+  - target: take-notes
+  - target: critical-thinking-framework
 metadata:
   estimated_duration: "30-60 minutes"
   avg_tokens: 12000
   trigger: manual
-  - target: data-interpretation
     type: uses
-  - target: progress-tracking
     type: uses
-  - target: plan-studies
     type: uses
-  - target: take-notes
     type: uses
-  - target: critical-thinking-framework
     type: references
 ---
 
