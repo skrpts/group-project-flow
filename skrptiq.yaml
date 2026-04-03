@@ -2,7 +2,7 @@ id: "b6f4c0c3-5f65-48d4-a0dc-89dc0af02479"
 name: "group-project-flow"
 display_name: "Group Project Flow"
 description: "Coordinating group assignments — role allocation, task decomposition, progress tracking, and final assembly"
-version: "1.0.4"
+version: "1.0.5"
 engine: ">=1.0.0"
 
 author:
@@ -28,11 +28,11 @@ requires:
     - "student-writing"
 
 contents:
-  skills: 7
-  prompts: 7
+  skills: 5
+  prompts: 6
   workflows: 1
   services: 1
-  sources: 2
+  sources: 1
   documents: 1
   assets: 2
-  total: 21
+  total: 17

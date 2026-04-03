@@ -31,15 +31,9 @@ connections:
     type: uses
   - target: team-charter-template
     type: uses
-  - target: data-interpretation
-    type: references
   - target: progress-tracking
     type: uses
-  - target: plan-studies
-    type: uses
   - target: take-notes
-    type: uses
-  - target: critical-thinking-framework
     type: uses
 metadata:
   estimated_duration: "30-60 minutes"
