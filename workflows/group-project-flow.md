@@ -35,6 +35,8 @@ connections:
     type: uses
   - target: take-notes
     type: uses
+  - target: consistency-check
+    type: uses
 metadata:
   estimated_duration: "30-60 minutes"
   avg_tokens: 12000
