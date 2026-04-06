@@ -11,16 +11,6 @@ connections:
     type: uses
   - target: conflict-resolution
     type: uses
-  - target: project-scoper
-    type: uses
-  - target: role-allocator
-    type: uses
-  - target: task-tracker-builder
-    type: uses
-  - target: peer-feedback-generator
-    type: uses
-  - target: final-assembly-checker
-    type: uses
   - target: llm-service
     type: runs_on
   - target: group-work-pedagogy-reference
@@ -32,8 +22,6 @@ connections:
   - target: team-charter-template
     type: uses
   - target: progress-tracking
-    type: uses
-  - target: take-notes
     type: uses
   - target: consistency-check
     type: uses
