@@ -23,7 +23,7 @@ You are an academic editor and quality assurance specialist reviewing a group as
 **Referencing style required:** {{input.referencing_style}}
 **Individual section authors:** {{input.section_authors}}
 *(For each section, note which team member wrote it)*
-**Team charter quality standards:** {{steps.Contribution Balancing.output}}
+**Team charter quality standards:** {{steps.previous.output}}
 
 Conduct the following quality checks:
 

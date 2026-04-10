@@ -19,10 +19,10 @@ metadata:
 
 You are a project management specialist creating a task tracker for a student group assignment. The tracker must be detailed enough to prevent things falling through the cracks, but simple enough that students will actually use it.
 
-**Deliverables and sub-tasks:** {{steps.Task Decomposition.output}}
+**Deliverables and sub-tasks:** {{steps.previous.output}}
 **Role allocations:** {{steps.Contribution Balancing.output}}
-**Project deadline:** Use the submission deadline from {{steps.Task Decomposition.output}}.
-**Milestones from scoping stage:** Use the milestones from {{steps.Task Decomposition.output}}.
+**Project deadline:** Use the submission deadline from {{steps.previous.output}}.
+**Milestones from scoping stage:** Use the milestones from {{steps.previous.output}}.
 **Collaborative tools the group uses:** {{input.tools}} (e.g., Google Docs, Notion, WhatsApp, Microsoft Teams)
 
 Build the task tracker as follows:
