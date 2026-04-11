@@ -29,6 +29,20 @@ metadata:
   estimated_duration: "30-60 minutes"
   avg_tokens: 12000
   trigger: manual
+execution:
+  - skill: "task-decomposition"
+  - skill: "contribution-balancing"
+    input_from: "task-decomposition"
+  - skill: "conflict-resolution"
+    input_from: "contribution-balancing"
+  - skill: "project-tracker-template"
+    input_from: "conflict-resolution"
+  - skill: "team-charter-template"
+    input_from: "project-tracker-template"
+  - skill: "progress-tracking"
+    input_from: "team-charter-template"
+  - skill: "consistency-check"
+    input_from: "progress-tracking"
 ---
 
 ## Group Project Flow
