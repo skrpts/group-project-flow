@@ -4,6 +4,13 @@ id: role-allocator
 title: Role Allocator
 description: "Allocates roles and responsibilities based on team member strengths, preferences, and availability"
 tags: [Production, Planning, Communication]
+inputs:
+  team_members:
+    label: "Team Members"
+    description: "List of team members and their roles"
+    example: "Alice (lead engineer), Bob (backend), Carol (frontend), Dave (design)"
+    required: true
+    type: text
 connections:
   - target: contribution-balancing
     type: derived_from

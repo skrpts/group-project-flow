@@ -4,6 +4,13 @@ id: task-tracker-builder
 title: Task Tracker Builder
 description: "Creates a structured task tracker with dependencies, deadlines, and accountability for group project management"
 tags: [Production, Planning, Communication]
+inputs:
+  tools:
+    label: "Tools"
+    description: "Tools and technologies used"
+    example: "TypeScript, PostgreSQL, Docker, GitHub Actions"
+    required: true
+    type: text
 connections:
   - target: task-decomposition
     type: derived_from

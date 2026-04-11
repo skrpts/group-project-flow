@@ -4,6 +4,25 @@ id: final-assembly-checker
 title: Final Assembly Checker
 description: "Checks that all group contributions are consistent in style, quality, and formatting before final submission"
 tags: [Production, Quality, Planning]
+inputs:
+  assembled_document:
+    label: "Assembled Document"
+    description: "The combined document from all contributors"
+    example: "[Paste the assembled document here]"
+    required: true
+    type: text
+  referencing_style:
+    label: "Referencing Style"
+    description: "The referencing format to use throughout"
+    example: "APA 7th Edition"
+    required: true
+    type: text
+  section_authors:
+    label: "Section Authors"
+    description: "Who wrote each section"
+    example: "Introduction: Alice. Methods: Bob. Results: Carol."
+    required: true
+    type: text
 connections:
   - target: contribution-balancing
     type: derived_from

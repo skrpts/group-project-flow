@@ -4,6 +4,25 @@ id: peer-feedback-generator
 title: Peer Feedback Generator
 description: "Generates constructive, specific peer feedback for group members based on their contributions and the project's progress"
 tags: [Production, Review, Planning]
+inputs:
+  current_milestone:
+    label: "Current Milestone"
+    description: "The current milestone or phase"
+    example: "Beta release — targeting 15 May"
+    required: true
+    type: text
+  member_contributions:
+    label: "Member Contributions"
+    description: "What each member has contributed so far"
+    example: "Alice: backend API. Bob: frontend. Carol: testing. Dave: documentation."
+    required: true
+    type: text
+  concerns:
+    label: "Concerns"
+    description: "Current concerns or blockers"
+    example: "API rate limits may not support projected load. Key hire still unfilled."
+    required: true
+    type: text
 connections:
   - target: contribution-balancing
     type: derived_from

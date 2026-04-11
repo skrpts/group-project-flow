@@ -4,6 +4,49 @@ id: project-scoper
 title: Project Scoper
 description: "Breaks a group assignment brief into clear deliverables, milestones, and success criteria"
 tags: [Production, Planning, Communication]
+inputs:
+  assignment_brief:
+    label: "Assignment Brief"
+    description: "The full assignment brief or instructions"
+    example: "Write a 1500-word report analysing the causes of inflation in the UK economy"
+    required: true
+    type: text
+  module_name:
+    label: "Module Name"
+    description: "The name of the course module or subject"
+    example: "Introduction to Macroeconomics"
+    required: true
+    type: text
+  group_size:
+    label: "Group Size"
+    description: "Number of people in the group"
+    example: "4"
+    required: true
+    type: text
+  deadline:
+    label: "Deadline"
+    description: "When the work is due"
+    example: "2026-05-20"
+    required: true
+    type: text
+  total_scope:
+    label: "Total Scope"
+    description: "The total scope of work for the project"
+    example: "47 user stories, 12 epics, estimated 340 story points"
+    required: true
+    type: text
+  assessment_criteria:
+    label: "Assessment Criteria"
+    description: "How the work will be marked or assessed"
+    example: "Argument (30%), Evidence (25%), Structure (20%), Writing quality (15%), Referencing (10%)"
+    required: true
+    type: text
+  additional_requirements:
+    label: "Additional Requirements"
+    description: "Any additional requirements not covered above"
+    example: "Must support WCAG 2.1 AA accessibility. Needs GDPR compliance review."
+    required: true
+    type: text
 connections:
   - target: task-decomposition
     type: derived_from
