@@ -2,7 +2,7 @@ id: "b6f4c0c3-5f65-48d4-a0dc-89dc0af02479"
 name: "group-project-flow"
 display_name: "Group Project Flow"
 description: "Coordinating group assignments — role allocation, task decomposition, progress tracking, and final assembly"
-version: "1.1.6"
+version: "1.1.7"
 engine: ">=1.0.0"
 
 author:
@@ -26,6 +26,17 @@ requires:
   data_handling:
     - "assignment-briefs"
     - "student-writing"
+
+# --- Output ---
+output_step: "progress-tracking"
+composite_steps:
+  - "task-decomposition"
+  - "contribution-balancing"
+  - "conflict-resolution"
+  - "project-tracker-template"
+  - "team-charter-template"
+  - "progress-tracking"
+  - "consistency-check"
 
 contents:
   skills: 6
