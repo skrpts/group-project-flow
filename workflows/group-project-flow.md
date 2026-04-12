@@ -31,18 +31,25 @@ metadata:
   trigger: manual
 execution:
   - skill: "task-decomposition"
+    step_type: "generation"
   - skill: "contribution-balancing"
     input_from: "task-decomposition"
+    step_type: "synthesis"
   - skill: "conflict-resolution"
     input_from: "contribution-balancing"
+    step_type: "synthesis"
   - skill: "project-tracker-template"
     input_from: "conflict-resolution"
+    step_type: "generation"
   - skill: "team-charter-template"
     input_from: "project-tracker-template"
+    step_type: "generation"
   - skill: "progress-tracking"
     input_from: "team-charter-template"
+    step_type: "synthesis"
   - skill: "consistency-check"
     input_from: "progress-tracking"
+    step_type: "review"
 ---
 
 ## Group Project Flow
