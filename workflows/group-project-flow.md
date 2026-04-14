@@ -29,6 +29,15 @@ metadata:
   estimated_duration: "30-60 minutes"
   avg_tokens: 12000
   trigger: manual
+output_step: "progress-tracking"
+composite_steps:
+  - "task-decomposition"
+  - "contribution-balancing"
+  - "conflict-resolution"
+  - "project-tracker-template"
+  - "team-charter-template"
+  - "progress-tracking"
+  - "consistency-check"
 execution:
   - skill: "task-decomposition"
     step_type: "generation"
