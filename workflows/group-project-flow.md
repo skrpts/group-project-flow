@@ -11,6 +11,8 @@ connections:
     type: uses
   - target: conflict-resolution
     type: uses
+  - target: language-polish
+    type: uses
   - target: llm-service
     type: runs_on
   - target: group-work-pedagogy-reference
@@ -29,7 +31,7 @@ metadata:
   estimated_duration: "30-60 minutes"
   avg_tokens: 12000
   trigger: manual
-output_step: "progress-tracking"
+output_step: "language-polish"
 composite_steps:
   - "task-decomposition"
   - "contribution-balancing"
@@ -38,6 +40,7 @@ composite_steps:
   - "team-charter-template"
   - "progress-tracking"
   - "consistency-check"
+  - "language-polish"
 execution:
   - skill: "task-decomposition"
     step_type: "generation"
@@ -51,6 +54,8 @@ execution:
     step_type: "generation"
   - skill: "progress-tracking"
     step_type: "synthesis"
+  - skill: "language-polish"
+    step_type: "content"
   - skill: "consistency-check"
     step_type: "review"
 ---
