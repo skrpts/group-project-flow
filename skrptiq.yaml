@@ -2,7 +2,7 @@ id: "b6f4c0c3-5f65-48d4-a0dc-89dc0af02479"
 name: "group-project-flow"
 display_name: "Group Project Flow"
 description: "Coordinating group assignments — role allocation, task decomposition, progress tracking, and final assembly"
-version: "1.1.13"
+version: "1.1.14"
 engine: ">=1.0.0"
 
 author:

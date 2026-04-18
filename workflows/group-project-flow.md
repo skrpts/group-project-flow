@@ -44,8 +44,10 @@ composite_steps:
 execution:
   - skill: "task-decomposition"
     step_type: "generation"
+    prompt: "project-scoper"
   - skill: "contribution-balancing"
     step_type: "synthesis"
+    prompt: "role-allocator"
   - skill: "conflict-resolution"
     step_type: "synthesis"
   - skill: "project-tracker-template"

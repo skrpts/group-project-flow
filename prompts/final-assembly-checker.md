@@ -10,7 +10,8 @@ inputs:
     description: "The combined document from all contributors"
     example: "[Paste the assembled document here]"
     required: true
-    type: text
+    type: file
+    accept: ".pdf,.txt,.md,.docx"
   referencing_style:
     label: "Referencing Style"
     description: "The referencing format to use throughout"
