@@ -61,9 +61,15 @@ execution:
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    context:
+      voice_profile: ""
+      grammar_strictness: ""
   - skill: "consistency-check"
     prompt: "check-consistency"
     step_type: "review"
+    context:
+      voice_profile: ""
+      consistency_strictness: ""
 ---
 
 ## Group Project Flow
