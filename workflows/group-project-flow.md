@@ -52,9 +52,9 @@ execution:
     prompt: "peer-feedback-generator"
     step_type: "synthesis"
   - skill: "project-tracker-template"
-    step_type: "generation"
+    step_type: "local.template"
   - skill: "team-charter-template"
-    step_type: "generation"
+    step_type: "local.template"
   - skill: "progress-tracking"
     prompt: "track-progress"
     step_type: "synthesis"
@@ -62,14 +62,14 @@ execution:
     prompt: "polish-language"
     step_type: "content"
     context:
-      voice_profile: ""
-      grammar_strictness: ""
+      voice_profile: "Neutral professional tone"
+      grammar_strictness: "Professional"
   - skill: "consistency-check"
     prompt: "check-consistency"
     step_type: "review"
     context:
-      voice_profile: ""
-      consistency_strictness: ""
+      voice_profile: "Neutral professional tone"
+      consistency_strictness: "Standard"
 ---
 
 ## Group Project Flow
