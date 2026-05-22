@@ -2,7 +2,7 @@ id: "b6f4c0c3-5f65-48d4-a0dc-89dc0af02479"
 name: "group-project-flow"
 display_name: "Group Project Flow"
 description: "Coordinating group assignments — role allocation, task decomposition, progress tracking, and final assembly"
-version: "1.1.23"
+version: "1.1.24"
 engine: ">=0.1.0"
 
 author:
@@ -13,11 +13,11 @@ repository: "https://github.com/skrpts/group-project-flow"
 
 category: "student"
 tags:
-  - "group-work"
+  - "assignments"
   - "collaboration"
+  - "group-work"
   - "project-management"
   - "teamwork"
-  - "assignments"
 
 requires:
   services:
