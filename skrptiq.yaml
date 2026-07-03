@@ -2,7 +2,7 @@ id: "b6f4c0c3-5f65-48d4-a0dc-89dc0af02479"
 name: "group-project-flow"
 display_name: "Group Project Flow"
 description: "Coordinating group assignments — role allocation, task decomposition, progress tracking, and final assembly"
-version: "1.1.26"
+version: "1.1.27"
 engine: ">=0.1.0"
 
 author:
@@ -78,3 +78,17 @@ contents:
   documents: 1
   assets: 2
   total: 13
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-03T11:02:52.385Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: []
+    data_handling: []
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/group-project-flow/security"

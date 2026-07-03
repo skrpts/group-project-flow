@@ -45,28 +45,36 @@ execution:
   - skill: "task-decomposition"
     step_type: "generation"
     prompt: "project-scoper"
+    output: { name: "project_scope", type: "text" }
   - skill: "contribution-balancing"
     step_type: "synthesis"
     prompt: "role-allocator"
+    output: { name: "role_allocation", type: "text" }
   - skill: "conflict-resolution"
     prompt: "peer-feedback-generator"
     step_type: "synthesis"
+    output: { name: "peer_feedback", type: "text" }
   - skill: "project-tracker-template"
     step_type: "local.template"
+    output: { name: "project_tracker", type: "text" }
   - skill: "team-charter-template"
     step_type: "local.template"
+    output: { name: "team_charter", type: "text" }
   - skill: "progress-tracking"
     prompt: "track-progress"
     step_type: "synthesis"
+    output: { name: "progress", type: "text" }
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    output: { name: "polished_output", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
   - skill: "consistency-check"
     prompt: "check-consistency"
     step_type: "review"
+    output: { name: "consistency_verdict", type: "decision" }
     context:
       voice_profile: "Neutral professional tone"
       consistency_strictness: "Standard"
