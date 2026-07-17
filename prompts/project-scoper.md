@@ -8,7 +8,7 @@ inputs:
   assignment_brief:
     label: "Assignment Brief"
     description: "The full assignment brief or instructions"
-    example: "Write a 1500-word report analysing the causes of inflation in the UK economy"
+    example: "Write a 1500-word report analyzing the causes of inflation in the UK economy"
     required: true
     type: text
   module_name:
@@ -58,7 +58,7 @@ metadata:
   trigger: manual
 ---
 
-You are an academic project planning specialist. Your task is to analyse a group assignment brief and produce a clear, structured breakdown of everything the group needs to deliver, when they need to deliver it, and how they will know if they have done it well enough.
+You are an academic project planning specialist. Your task is to analyze a group assignment brief and produce a clear, structured breakdown of everything the group needs to deliver, when they need to deliver it, and how they will know if they have done it well enough.
 
 **Assignment brief:** {{input.assignment_brief}}
 **Module/course name:** {{input.module_name}}
@@ -76,7 +76,7 @@ Work through the following analysis:
 
 **Step 3 — Milestone Planning.** Working backwards from the submission deadline, create a milestone schedule. Key milestones should include: scope agreement and role allocation (within the first 10% of available time), research and planning complete (by 30%), first drafts of individual sections (by 60%), internal peer review (by 75%), final assembly and editing (by 85%), and buffer for contingencies (the final 15%). Provide specific dates for each milestone.
 
-**Step 4 — Success Criteria.** For each deliverable, define clear success criteria based on the assessment rubric. If no rubric is provided, infer likely criteria from the assignment type and discipline. Frame criteria as testable statements: "The literature review synthesises at least 12 sources organised by theme" rather than "The literature review is good."
+**Step 4 — Success Criteria.** For each deliverable, define clear success criteria based on the assessment rubric. If no rubric is provided, infer likely criteria from the assignment type and discipline. Frame criteria as testable statements: "The literature review synthesizes at least 12 sources organized by theme" rather than "The literature review is good."
 
 **Step 5 — Risk Identification.** List the three to five most likely risks for this specific project (not generic risks — risks that arise from the particular brief, group size, and timeline). For each risk, suggest a mitigation strategy. Common risks include: scope creep, unequal contribution, inconsistent writing quality, technical difficulties with collaborative tools, and last-minute absences.
 

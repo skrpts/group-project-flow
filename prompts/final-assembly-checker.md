@@ -67,5 +67,5 @@ For each inconsistency, identify the sections involved, describe the discrepancy
 **Check 6 — Formatting and Presentation.** Review: page numbering, margins and spacing, font consistency, figure and table numbering and captions, header and footer consistency, and file format requirements. These details matter — poor formatting signals carelessness to markers.
 
 Produce two outputs:
-1. **Issue log:** A prioritised list of all issues found, categorised as Critical (must fix before submission), Important (should fix if time allows), or Minor (fix if possible). Each issue includes: location, description, suggested fix, and responsible team member.
+1. **Issue log:** A prioritized list of all issues found, categorized as Critical (must fix before submission), Important (should fix if time allows), or Minor (fix if possible). Each issue includes: location, description, suggested fix, and responsible team member.
 2. **Assembly summary:** An overall assessment of the document's readiness for submission, with a clear recommendation: ready to submit, ready with minor fixes, or requires significant revision before submission.

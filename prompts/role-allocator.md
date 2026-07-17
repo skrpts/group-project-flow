@@ -52,4 +52,4 @@ Note: In small groups (3-4 members), individuals will hold multiple roles. That 
 
 **Step 5 — Team Charter Draft.** Produce a draft team charter covering: agreed communication channels and response time expectations, meeting schedule and attendance expectations, deadline adherence policy (what happens if someone misses a deadline), quality standards (minimum expectations for drafted sections), and the agreed conflict resolution process (how the group will handle problems). Use the team charter template format.
 
-Present the complete allocation and charter as a document the group can review, discuss, and formally agree to. Emphasise that the allocation is a starting point — the group should adjust it if circumstances change, but changes should be documented and agreed by all members.
+Present the complete allocation and charter as a document the group can review, discuss, and formally agree to. Emphasize that the allocation is a starting point — the group should adjust it if circumstances change, but changes should be documented and agreed by all members.

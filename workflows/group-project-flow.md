@@ -54,10 +54,10 @@ execution:
     prompt: "peer-feedback-generator"
     step_type: "synthesis"
     output: { name: "peer_feedback", type: "text" }
-  - skill: "project-tracker-template"
+  - id: "project-tracker-template"
     step_type: "local.template"
     output: { name: "project_tracker", type: "text" }
-  - skill: "team-charter-template"
+  - id: "team-charter-template"
     step_type: "local.template"
     output: { name: "team_charter", type: "text" }
   - skill: "progress-tracking"
@@ -82,7 +82,7 @@ execution:
 
 ## Group Project Flow
 
-This workflow orchestrates the complete lifecycle of a group assignment, from receiving the brief through to submitting a polished, unified piece of work. It is designed for student groups of three to six members who need structured guidance on dividing labour, tracking progress, and maintaining quality across contributions.
+This workflow orchestrates the complete lifecycle of a group assignment, from receiving the brief through to submitting a polished, unified piece of work. It is designed for student groups of three to six members who need structured guidance on dividing labor, tracking progress, and maintaining quality across contributions.
 
 ### Pipeline Stages
 
@@ -91,7 +91,7 @@ This workflow orchestrates the complete lifecycle of a group assignment, from re
 **Input:** The assignment brief and group details (number of members, deadline, word count)
 **Output:** A structured breakdown of deliverables, milestones, and success criteria
 
-The workflow begins by analysing the assignment brief and decomposing it into clear, measurable deliverables. The `task-decomposition` skill powers the analysis, identifying both the obvious deliverables and the hidden work (formatting, referencing, editing, submission logistics) that groups often forget to plan for.
+The workflow begins by analyzing the assignment brief and decomposing it into clear, measurable deliverables. The `task-decomposition` skill powers the analysis, identifying both the obvious deliverables and the hidden work (formatting, referencing, editing, submission logistics) that groups often forget to plan for.
 
 **Error handling:** If the brief is ambiguous about expectations, the scoper flags specific questions the group should ask their lecturer before proceeding. The group should not move to Stage 2 until the scope is confirmed.
 
@@ -183,7 +183,7 @@ Stages 1 and 2 are sequential. Once Stage 3 is complete, individual work happens
 Before running this workflow:
 
 1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
-2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+2. Review the included documents, assets, or source nodes and customize them to match your team, brand, or domain conventions where needed.
 3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
 
 ## Provider Notes

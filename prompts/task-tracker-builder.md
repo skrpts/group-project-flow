@@ -44,7 +44,7 @@ Build the task tracker as follows:
 - **Status:** Not started / In progress / Under review / Complete
 - **Acceptance criteria:** How the group will know this task is done to standard
 
-**Step 2 — Timeline Visualisation.** Arrange the tasks into a week-by-week timeline from now until the submission deadline. Show which tasks are active in each week, highlighting: parallel tasks (work that can happen simultaneously), sequential tasks (work that must happen in order), and bottleneck weeks (weeks where many tasks converge).
+**Step 2 — Timeline Visualization.** Arrange the tasks into a week-by-week timeline from now until the submission deadline. Show which tasks are active in each week, highlighting: parallel tasks (work that can happen simultaneously), sequential tasks (work that must happen in order), and bottleneck weeks (weeks where many tasks converge).
 
 **Step 3 — Checkpoint Schedule.** Define two to three checkpoint dates between now and the deadline. At each checkpoint, specify: which tasks should be complete, what the group should review together, and what decisions need to be made. Checkpoints are the moments when the peer feedback prompt should be run.
 

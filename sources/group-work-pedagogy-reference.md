@@ -38,7 +38,7 @@ Not all groups reach the performing stage. Groups that rush through forming and 
 
 ### Principles of Effective Group Work
 
-**Positive interdependence:** Each member's contribution must be necessary for the group to succeed. If one person could do the entire assignment alone with no loss of quality, the group structure is not adding value. Task decomposition should create genuine interdependence — sections that reference each other, analyses that build on shared data, arguments that connect.
+**Positive interdependence:** Each member's contribution must be necessary for the group to succeed. If one person could do the entire assignment alone with no loss of quality, the group structure is not adding value. Task decomposition should create genuine interdependence — sections that reference each other, analyzes that build on shared data, arguments that connect.
 
 **Individual accountability:** Every member must be accountable for their specific contribution. The task tracker and peer feedback mechanisms serve this purpose. Without accountability, social loafing (letting others carry the workload) is almost inevitable.
 
@@ -46,7 +46,7 @@ Not all groups reach the performing stage. Groups that rush through forming and 
 
 **Social skills:** Group work requires skills that many students have not explicitly developed: active listening, constructive criticism, negotiation, and conflict resolution. The team charter and conflict resolution frameworks provide scaffolding for these skills.
 
-**Group processing:** The group should regularly reflect on how well it is functioning and what could be improved. The checkpoint schedule and peer feedback prompt formalise this process.
+**Group processing:** The group should regularly reflect on how well it is functioning and what could be improved. The checkpoint schedule and peer feedback prompt formalize this process.
 
 ### Common Group Work Problems and Causes
 
@@ -67,7 +67,7 @@ Many institutions require a contribution statement or use peer assessment to adj
 - **Document contributions throughout, not just at the end.** Retrospective assessment is unreliable — people remember their own contributions more vividly than others'.
 - **Use specific criteria.** "Alice contributed 30% of the work" is less useful than "Alice researched and drafted the literature review (1,500 words), attended all four meetings, and reviewed two other members' sections."
 - **Separate task completion from quality.** A member who completes all assigned tasks but produces poor-quality work is different from a member who produces excellent work but completes only half their tasks.
-- **Account for invisible work.** Coordination, editing, formatting, and emotional labour (keeping the group motivated) are real contributions that often go unrecognised.
+- **Account for invisible work.** Coordination, editing, formatting, and emotional labor (keeping the group motivated) are real contributions that often go unrecognised.
 
 ### Recommended Group Sizes
 
