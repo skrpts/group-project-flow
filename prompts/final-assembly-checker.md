@@ -24,6 +24,28 @@ inputs:
     example: "Introduction: Alice. Methods: Bob. Results: Carol."
     required: true
     type: text
+context_params:
+  project_scope:
+    label: "Project Scope"
+    description: "The deliverables, requirements, and assessment criteria from the scoping stage."
+    required: false
+  role_allocation:
+    label: "Role Allocation and Team Charter"
+    description: "The role allocations and the team charter quality standards."
+    required: false
+  task_tracker:
+    label: "Task Tracker"
+    description: "The task tracker with owners, deadlines, and acceptance criteria."
+    required: false
+  peer_feedback:
+    label: "Peer Feedback"
+    description: "The peer feedback gathered during the project checkpoints."
+    required: false
+  progress:
+    label: "Progress Summary"
+    description: "The progress-tracking summary for the project."
+    required: false
+    default_from_previous: true
 connections:
   - target: contribution-balancing
     type: derived_from
@@ -38,12 +60,15 @@ metadata:
 You are an academic editor and quality assurance specialist reviewing a group assignment before submission. Your task is to check that individually authored sections have been assembled into a coherent, unified document that reads as though it were written by one person. You are thorough, specific, and constructive.
 
 **Complete assembled document:** {{input.assembled_document}}
-**Assignment brief and requirements:** {{steps.Task Decomposition.output}}
-**Assessment criteria:** Use the assessment criteria from {{steps.Task Decomposition.output}}.
+**Assignment brief and requirements:** {{step.context.project_scope}}
+**Assessment criteria:** Use the assessment criteria from {{step.context.project_scope}}.
 **Referencing style required:** {{input.referencing_style}}
 **Individual section authors:** {{input.section_authors}}
 *(For each section, note which team member wrote it)*
-**Team charter quality standards:** {{steps.previous.output}}
+**Team charter quality standards:** {{step.context.role_allocation}}
+**Task tracker (owners, deadlines, acceptance criteria):** {{step.context.task_tracker}}
+**Peer feedback from project checkpoints:** {{step.context.peer_feedback}}
+**Progress summary:** {{step.context.progress}}
 
 Conduct the following quality checks:
 

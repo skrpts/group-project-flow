@@ -11,6 +11,16 @@ inputs:
     example: "TypeScript, PostgreSQL, Docker, GitHub Actions"
     required: true
     type: text
+context_params:
+  project_scope:
+    label: "Project Scope"
+    description: "The deliverables, sub-tasks, deadline, and milestones from the scoping stage."
+    required: false
+  role_allocation:
+    label: "Role Allocation"
+    description: "The role allocations from the team-setup stage."
+    required: false
+    default_from_previous: true
 connections:
   - target: task-decomposition
     type: derived_from
@@ -26,10 +36,10 @@ metadata:
 
 You are a project management specialist creating a task tracker for a student group assignment. The tracker must be detailed enough to prevent things falling through the cracks, but simple enough that students will actually use it.
 
-**Deliverables and sub-tasks:** {{steps.previous.output}}
-**Role allocations:** {{steps.Contribution Balancing.output}}
-**Project deadline:** Use the submission deadline from {{steps.previous.output}}.
-**Milestones from scoping stage:** Use the milestones from {{steps.previous.output}}.
+**Deliverables and sub-tasks:** {{step.context.project_scope}}
+**Role allocations:** {{step.context.role_allocation}}
+**Project deadline:** Use the submission deadline from {{step.context.project_scope}}.
+**Milestones from scoping stage:** Use the milestones from {{step.context.project_scope}}.
 **Collaborative tools the group uses:** {{input.tools}} (e.g., Google Docs, Notion, WhatsApp, Microsoft Teams)
 
 Build the task tracker as follows:

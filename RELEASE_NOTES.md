@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.29
+GH#863 Wave 1 — fix K-045 intent/output mismatch. The task-tracker-builder and final-assembly-checker prompts (which produce the tracker and the final assembled submission) were never invoked by the workflow. Wire both as execution steps in dependency order: task-tracker-builder after role allocation; final-assembly-checker as the last content step, assembling the submission from the scope, roles, tracker, and feedback before language polish. Add two backing skills (Task Tracker Builder, Final Assembly Checker) so the new from_step targets resolve, convert cross-step refs to named context_params with bindings, and bind polish-language `source` to the final-assembly output (re-pinned polish-language@1.0.6 for the `source` slot).
+
 ## v1.1.28
 GH#845 — republish with American English (en-US) content, completing the source-only GH#805 flip that never reached the Hub. Copy only — no functional or behaviour change.
 

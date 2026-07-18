@@ -9,7 +9,11 @@ connections:
     type: uses
   - target: contribution-balancing
     type: uses
+  - target: task-tracker
+    type: uses
   - target: conflict-resolution
+    type: uses
+  - target: final-assembly
     type: uses
   - target: language-polish
     type: uses
@@ -35,10 +39,12 @@ output_step: "language-polish"
 composite_steps:
   - "task-decomposition"
   - "contribution-balancing"
+  - "task-tracker"
   - "conflict-resolution"
   - "project-tracker-template"
   - "team-charter-template"
   - "progress-tracking"
+  - "final-assembly"
   - "consistency-check"
   - "language-polish"
 execution:
@@ -50,6 +56,17 @@ execution:
     step_type: "synthesis"
     prompt: "role-allocator"
     output: { name: "role_allocation", type: "text" }
+  - skill: "task-tracker"
+    prompt: "task-tracker-builder"
+    step_type: "synthesis"
+    output: { name: "task_tracker", type: "text" }
+    bindings:
+      project_scope:
+        from_step: "Task Decomposition"
+        field: output
+      role_allocation:
+        from_step: "Contribution Balancing"
+        field: output
   - skill: "conflict-resolution"
     prompt: "peer-feedback-generator"
     step_type: "synthesis"
@@ -64,6 +81,26 @@ execution:
     prompt: "track-progress"
     step_type: "synthesis"
     output: { name: "progress", type: "text" }
+  - skill: "final-assembly"
+    prompt: "final-assembly-checker"
+    step_type: "synthesis"
+    output: { name: "final_submission", type: "text" }
+    bindings:
+      project_scope:
+        from_step: "Task Decomposition"
+        field: output
+      role_allocation:
+        from_step: "Contribution Balancing"
+        field: output
+      task_tracker:
+        from_step: "Task Tracker Builder"
+        field: output
+      peer_feedback:
+        from_step: "Conflict Resolution"
+        field: output
+      progress:
+        from_step: "Progress Tracking"
+        field: output
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
@@ -71,6 +108,10 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
+    bindings:
+      source:
+        from_step: "Final Assembly Checker"
+        field: output
   - skill: "consistency-check"
     prompt: "check-consistency"
     step_type: "review"
