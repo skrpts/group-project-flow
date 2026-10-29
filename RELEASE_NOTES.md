@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.30
+GH#1100 consumer wave batch 5 — declare the data flow these steps were resolving positionally. 2 binding(s) added: `track-progress` ← team-charter-template; `check-consistency` ← Language Polish. Each dependency was also re-pinned to the version that introduced its `source` slot, with checksums resolved from the live catalogue rather than transcribed — a binding against a pin below the slot version is declared but inert, which the canonical scan reports as `execution_bindings_unused_key`.
+
 ## v1.1.29
 GH#863 Wave 1 — fix K-045 intent/output mismatch. The task-tracker-builder and final-assembly-checker prompts (which produce the tracker and the final assembled submission) were never invoked by the workflow. Wire both as execution steps in dependency order: task-tracker-builder after role allocation; final-assembly-checker as the last content step, assembling the submission from the scope, roles, tracker, and feedback before language polish. Add two backing skills (Task Tracker Builder, Final Assembly Checker) so the new from_step targets resolve, convert cross-step refs to named context_params with bindings, and bind polish-language `source` to the final-assembly output (re-pinned polish-language@1.0.6 for the `source` slot).
 

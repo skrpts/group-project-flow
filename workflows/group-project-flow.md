@@ -81,6 +81,10 @@ execution:
     prompt: "track-progress"
     step_type: "synthesis"
     output: { name: "progress", type: "text" }
+    bindings:
+      source:
+        from_step: "team-charter-template"
+        field: output
   - skill: "final-assembly"
     prompt: "final-assembly-checker"
     step_type: "synthesis"
@@ -119,6 +123,10 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       consistency_strictness: "Standard"
+    bindings:
+      source:
+        from_step: "Language Polish"
+        field: output
 ---
 
 ## Group Project Flow
