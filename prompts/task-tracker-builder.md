@@ -20,7 +20,6 @@ context_params:
     label: "Role Allocation"
     description: "The role allocations from the team-setup stage."
     required: false
-    default_from_previous: true
 connections:
   - target: task-decomposition
     type: derived_from

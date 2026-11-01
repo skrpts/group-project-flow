@@ -45,7 +45,6 @@ context_params:
     label: "Progress Summary"
     description: "The progress-tracking summary for the project."
     required: false
-    default_from_previous: true
 connections:
   - target: contribution-balancing
     type: derived_from
